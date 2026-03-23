@@ -1,6 +1,4 @@
-// Question: Main class for Spring Boot
-
-package com.portfolio;
+package com.mahesh.portfolio;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

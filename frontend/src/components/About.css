@@ -1,0 +1,78 @@
+/* ============================================================
+   About.css — Styles for the About Me section
+   ============================================================ */
+
+#about {
+  background: var(--bg-secondary);
+}
+
+.section-label {
+  font-size: 13px;
+  font-family: var(--font-code);
+  color: var(--accent);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+/* Two-column layout: text on left, cards on right */
+.about-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+/* ── Bio text ─────────────────────────────────────────────── */
+.about-text p {
+  font-size: 16px;
+  line-height: 1.85;
+  color: var(--text-secondary);
+}
+
+.about-text strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* ── Info Cards Grid ──────────────────────────────────────── */
+.about-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.about-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.about-card-icon {
+  font-size: 26px;
+  flex-shrink: 0;
+}
+
+.about-card-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.about-card-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* ── Responsive ──────────────────────────────────────────── */
+@media (max-width: 860px) {
+  .about-layout { grid-template-columns: 1fr; gap: 40px; }
+  .about-cards  { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 480px) {
+  .about-cards { grid-template-columns: 1fr; }
+}

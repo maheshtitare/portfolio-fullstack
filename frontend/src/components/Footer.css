@@ -1,0 +1,49 @@
+/* ============================================================
+   Footer.css
+   ============================================================ */
+
+.footer {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  padding: 40px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.footer-logo {
+  font-family: var(--font-code);
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.footer-logo .logo-bracket { color: var(--accent); }
+.footer-logo .logo-name { color: var(--text-primary); margin: 0 3px; }
+
+.footer-links {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s;
+}
+.footer-link:hover { color: var(--accent-light); }
+
+.footer-copy {
+  font-size: 13px;
+  color: var(--text-muted);
+}

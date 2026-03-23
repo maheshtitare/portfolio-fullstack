@@ -1,0 +1,129 @@
+/* ============================================================
+   Projects.css — Styles for the Projects section
+   ============================================================ */
+
+#projects {
+  background: var(--bg-secondary);
+}
+
+/* Three-column grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+/* ── Project Card internals ───────────────────────────────── */
+.project-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.project-emoji { font-size: 32px; }
+
+.project-status {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid;
+  letter-spacing: 0.5px;
+}
+
+.project-type-badge {
+  font-size: 11px;
+  font-family: var(--font-code);
+  color: var(--accent);
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.project-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.project-subtitle {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+
+.project-desc {
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+/* ── Expandable features list ────────────────────────────── */
+.project-features {
+  list-style: none;
+  margin: 0 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px;
+  background: rgba(255,255,255,0.03);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+
+.project-features li {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  display: flex;
+  gap: 8px;
+}
+
+.feature-bullet {
+  color: var(--accent);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* Toggle features button */
+.toggle-btn {
+  background: none;
+  border: none;
+  color: var(--accent-light);
+  font-size: 12px;
+  font-family: var(--font-code);
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 16px;
+  transition: color 0.2s;
+}
+.toggle-btn:hover { color: var(--accent); }
+
+/* ── Tech stack tags ─────────────────────────────────────── */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+/* ── GitHub link button ──────────────────────────────────── */
+.project-link {
+  width: 100%;
+  justify-content: center;
+  font-size: 14px;
+  padding: 10px;
+}
+
+/* ── Responsive ──────────────────────────────────────────── */
+@media (max-width: 1000px) {
+  .projects-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 640px) {
+  .projects-grid { grid-template-columns: 1fr; }
+}
