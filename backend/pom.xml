@@ -40,6 +40,12 @@
             <optional>true</optional>
         </dependency>
 
+        <!-- PostgreSQL Driver (ADDED) -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+        </dependency>
+
     </dependencies>
 
     <!-- Build -->
